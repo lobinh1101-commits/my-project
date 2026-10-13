@@ -1,0 +1,30 @@
+```css
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef;
+}
