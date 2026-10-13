@@ -1,70 +1,63 @@
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 75px;
-}
-
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
     color: #333;
 }
 
-.hero {
-    min-height: 420px;
-    background: linear-gradient(
-        rgba(13, 110, 253, 0.85),
-        rgba(0, 65, 160, 0.85)
-    );
-    padding: 80px 15px;
-}
-
-.hero h1 {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.section-title {
-    color: #0d6efd;
+header h1 {
     font-weight: bold;
 }
 
-.service-card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+.content-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    height: 100%;
 }
 
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+.content-box h2 {
+    color: #0d6efd;
+    margin-bottom: 20px;
 }
 
-.service-icon {
-    font-size: 45px;
+.content-box h3 {
+    font-size: 22px;
+    color: #333;
 }
 
-#about img {
-    width: 100%;
-    max-height: 350px;
-    object-fit: cover;
+.sidebar-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #0d6efd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-box h3 {
+    color: #0d6efd;
+}
+
+.sidebar-box li {
+    margin-bottom: 10px;
+}
+
+.sidebar-box a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.sidebar-box a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    font-size: 14px;
+    margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        min-height: 350px;
-        padding: 60px 15px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
+@media (max-width: 991.98px) {
+    .content-box {
+        padding: 20px;
     }
 }

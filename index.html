@@ -4,150 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu Công Ty</title>
+    <title>Website Responsive Bootstrap</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
         <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="#">Doanh Nghiệp</a>
+            <h1>Website Của Tôi</h1>
+            <p class="mb-0">Học Bootstrap và thiết kế giao diện Responsive</p>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
 
             <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Mở menu điều hướng">
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Mở menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Trang Chủ</a>
+                        <a class="nav-link active" href="#">Trang chủ</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Về Chúng Tôi</a>
+                        <a class="nav-link" href="#content">Nội dung</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Dịch Vụ</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Danh mục
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#html">HTML</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#bootstrap">Bootstrap</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#responsive">Responsive</a>
+                            </li>
+                        </ul>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Liên Hệ</a>
+                        <a class="nav-link" href="#footer">Liên hệ</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero text-white text-center d-flex align-items-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">
-                Chào Mừng Đến Với Công Ty Chúng Tôi
-            </h1>
+    <!-- Main Content -->
+    <main class="container my-4" id="content">
+        <div class="row g-4">
 
-            <p class="lead mt-3">
-                Cung cấp giải pháp công nghệ hiện đại cho doanh nghiệp của bạn.
-            </p>
+            <!-- Cột nội dung chính -->
+            <div class="col-12 col-lg-8">
+                <section class="content-box">
+                    <h2>Nội dung chính</h2>
+                    <p>
+                        Đây là khu vực nội dung chính của website.
+                        Phần này có thể chứa bài viết, hình ảnh hoặc thông tin.
+                    </p>
 
-            <a href="#services" class="btn btn-light btn-lg mt-3">
-                Tìm Hiểu Ngay
-            </a>
-        </div>
-    </header>
+                    <article id="html" class="mb-4">
+                        <h3>1. HTML cơ bản</h3>
+                        <p>
+                            HTML được sử dụng để xây dựng cấu trúc
+                            của một trang web.
+                        </p>
+                    </article>
 
-    <!-- About Section -->
-    <section id="about" class="container py-5">
-        <h2 class="section-title text-center mb-4">Về Chúng Tôi</h2>
+                    <article id="bootstrap" class="mb-4">
+                        <h3>2. Bootstrap</h3>
+                        <p>
+                            Bootstrap cung cấp các thành phần giao diện
+                            như Navbar, Button, Card và hệ thống Grid.
+                        </p>
+                    </article>
 
-        <div class="row align-items-center g-4">
-            <div class="col-md-6">
-                <img
-                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
-                    class="img-fluid rounded shadow"
-                    alt="Không gian làm việc của doanh nghiệp">
+                    <article id="responsive">
+                        <h3>3. Responsive Design</h3>
+                        <p>
+                            Responsive giúp giao diện tự điều chỉnh
+                            phù hợp với máy tính, máy tính bảng và điện thoại.
+                        </p>
+                    </article>
+                </section>
             </div>
 
-            <div class="col-md-6">
-                <h3>Đồng hành cùng sự phát triển của bạn</h3>
-                <p>
-                    Chúng tôi chuyên cung cấp các dịch vụ công nghệ,
-                    thiết kế website và tiếp thị kỹ thuật số.
-                </p>
-                <p>
-                    Với đội ngũ chuyên nghiệp và tinh thần sáng tạo,
-                    chúng tôi luôn hướng đến những giải pháp hiệu quả,
-                    giúp khách hàng phát triển bền vững.
-                </p>
-            </div>
+            <!-- Sidebar -->
+            <aside class="col-12 col-lg-4 d-none d-lg-block">
+                <div class="sidebar-box">
+                    <h3>Sidebar</h3>
+                    <p>Thông tin bổ sung cho website.</p>
+
+                    <hr>
+
+                    <h4 class="h5">Bài viết nổi bật</h4>
+                    <ul>
+                        <li><a href="#html">Tìm hiểu HTML</a></li>
+                        <li><a href="#bootstrap">Làm quen Bootstrap</a></li>
+                        <li><a href="#responsive">Thiết kế Responsive</a></li>
+                    </ul>
+
+                    <hr>
+
+                    <h4 class="h5">Thông báo</h4>
+                    <p>
+                        Hãy luyện tập thường xuyên để nâng cao
+                        kỹ năng thiết kế website.
+                    </p>
+                </div>
+            </aside>
+
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="bg-light py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">
-                Dịch Vụ Của Chúng Tôi
-            </h2>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card service-card h-100 text-center p-4">
-                        <div class="service-icon">💻</div>
-                        <h3 class="h5 mt-3">Thiết Kế Website</h3>
-                        <p>
-                            Thiết kế giao diện chuyên nghiệp,
-                            thân thiện và tối ưu trải nghiệm người dùng.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card service-card h-100 text-center p-4">
-                        <div class="service-icon">📈</div>
-                        <h3 class="h5 mt-3">Marketing Online</h3>
-                        <p>
-                            Xây dựng chiến lược tiếp thị số
-                            giúp thương hiệu tiếp cận nhiều khách hàng.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card service-card h-100 text-center p-4">
-                        <div class="service-icon">🎧</div>
-                        <h3 class="h5 mt-3">Hỗ Trợ Khách Hàng</h3>
-                        <p>
-                            Tư vấn và hỗ trợ khách hàng,
-                            hướng đến trải nghiệm dịch vụ tốt nhất.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container py-5 text-center">
-        <h2 class="section-title mb-4">Liên Hệ Với Chúng Tôi</h2>
-
-        <p>📧 Email: contact@company.com</p>
-        <p>📞 Hotline: 0988 123 456</p>
-        <p>📍 Địa chỉ: Thái Nguyên, Việt Nam</p>
-
-        <a href="mailto:contact@company.com" class="btn btn-primary mt-2">
-            Gửi Email
-        </a>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer id="footer" class="bg-dark text-white text-center py-3">
         <div class="container">
             <p class="mb-0">
-                &copy; 2026 Công Ty Chúng Tôi. All rights reserved.
+                &copy; 2026 Website Của Tôi. All rights reserved.
             </p>
         </div>
     </footer>
